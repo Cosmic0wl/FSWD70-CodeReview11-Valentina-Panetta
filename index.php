@@ -2,7 +2,7 @@
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid d-flex align-items-center">
         <div class="container">
-            <h1 class="display-4 text-center amatic">Valentina's Travel Blog</h1>
+            <h1 class="display-2 text-center amatic">Valentina's Travel Blog</h1>
         </div>
     </div>
     <!-- admin session -->
@@ -10,9 +10,9 @@
 
     <!-- content -->
     <div class="title d-flex justify-content-center py-5">
-        <h2 class="display-6 just"><span>Create</span></h2>
+        <h2 class="display-6 line just"><span class="line-span">Create</span></h2>
     </div>
-    <div class="row d-flex justify-content-center">
+    <div id="buttons" class="row d-flex justify-content-center">
         <a href="insert_location.php"><button class="btn btn-primary">Create a location</button></a>
         <a href="insert_place.php"><button class="btn btn-primary mx-4">Create a spot</button></a>
         <a href="insert_eatery.php"><button class="btn btn-primary">Create a restaurant</button></a>
@@ -27,7 +27,7 @@
     </form>
 </div>
     <div class="title d-flex justify-content-center py-5">
-        <h2 class="display-6 just"><span>Places</span></h2>
+        <h2 class="display-6 line just"><span class="line-span">Places</span></h2>
     </div>
 
     <div id="places" class="row">
@@ -59,7 +59,7 @@
         ?>
     </div>
     <div class="title d-flex justify-content-center py-5">
-        <h2 class="display-6 just"><span>Eateries</span></h2>
+        <h2 class="display-6 line just"><span class="line-span">Eateries</span></h2>
     </div>
     <div id="restaurants" class="row">
         <?php 
@@ -91,7 +91,7 @@
         ?>
     </div>
     <div class="title d-flex justify-content-center py-5">
-        <h2 class="display-6 just"><span>Events</span></h2>
+        <h2 class="display-6 line just"><span class="line-span">Events</span></h2>
     </div>
     <div id="events" class="row">
         <?php 
@@ -125,9 +125,16 @@
 <?php } ?>
 <!-- user session -->
         <?php if(isset($_SESSION["user"])) {?>
+    <div class="row mt-5 py-4 px-4 d-flex justify-content-center">
+        <form class="form-inline">  
+            <i class="fa fa-search-plus text-dark" aria-hidden="true"></i>
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                aria-label="Search" id="search" name="name">
+        </form>
+    </div>
     <!-- content -->
     <div class="title d-flex justify-content-center py-5">
-        <h2 class="display-6 just"><span>Places</span></h2>
+        <h2 class="display-6 line just"><span class="line-span">Places</span></h2>
     </div>
 
     <div id="places" class="row">

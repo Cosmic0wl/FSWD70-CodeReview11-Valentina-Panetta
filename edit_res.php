@@ -33,7 +33,7 @@ header("Location: index.php");
 <!-- jumbotron -->
 <div class="jumbotron jumbotron-fluid d-flex align-items-center">
     <div class="container">
-        <h1 class="display-4 text-center amatic">Admin Panel</h1>
+        <h1 class="display-1 mt-5 text-center amatic">Admin Panel</h1>
     </div>
 </div>
 <!-- form to update -->

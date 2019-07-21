@@ -18,8 +18,8 @@ echo '
 	<div class="d-flex justify-content-center align-items-center p-3">
   <img src="'.$img.'" class="align-self-start mr-3">
   <div>
-    <h5 class="darkpink-text">'.$firstname.'<small> <a class="text-decoration-none" href="logout.php?logout">Sign Out</a></small></h5> 
+    <h5 class="darkpink-text">'.$firstname.'<small class="ml-3"> <a class="text-decoration-none" href="logout.php?logout">Sign Out</a></small></h5> 
   </div>
 </div>';
 
-ob_end_flush(); ?>
+?>
