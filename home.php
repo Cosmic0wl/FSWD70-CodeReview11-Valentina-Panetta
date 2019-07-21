@@ -3,6 +3,9 @@ ob_start();
 session_start();
 require_once 'actions/db_connect.php';
 // if session is not set this will redirect to login page
+if(!isset($_SESSION["admin"]) && !isset($_SESSION["user"])){
+	header("Location: login.php");
+	}
 // select logged-in users details 
 $id = isset($_SESSION["user"]) ? $_SESSION["user"] : $_SESSION["admin"];
 $res=mysqli_query($connect, "SELECT * FROM users WHERE user_id=".$id);
